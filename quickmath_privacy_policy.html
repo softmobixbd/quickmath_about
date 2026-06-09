@@ -3,85 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - QuickMath Quest</title>
+    <title>Privacy Policy | QuickMath Quest</title>
+    <!-- Modern web typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <style>
+        :root {
+            --bg-color: #0d1310;
+            --card-bg: #141f1a;
+            --accent-glow: #00ff88;
+            --accent-dim: #1db974;
+            --text-main: #ffffff;
+            --text-muted: #a4b3ab;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            padding: 16px;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
             line-height: 1.6;
-            color: #e6e1e9;
-            background-color: #141318;
-            max-width: 800px;
-            margin: auto;
+            padding: 20px;
         }
-        h1, h2 {
-            color: #e6e1e9;
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 1px 1px rgba(0, 255, 136, 0.1);
         }
-        h1 {
-            font-size: 24px;
-            margin-top: 24px;
+
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+            border-bottom: 2px solid rgba(0, 255, 136, 0.1);
+            padding-bottom: 20px;
         }
-        h2 {
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-main);
+            text-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+        }
+
+        .logo-sub {
+            color: var(--accent-glow);
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 5px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h3 {
             font-size: 20px;
-            margin-top: 20px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-top: 30px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
         }
+
+        h3::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 20px;
+            background: var(--accent-glow);
+            margin-right: 10px;
+            border-radius: 4px;
+            box-shadow: 0 0 8px var(--accent-glow);
+        }
+
         p {
-            margin: 12px 0;
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 15px;
+            padding-left: 5px;
+        }
+
+        li {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent-glow);
+            font-weight: bold;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent-glow);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .info-box {
+            margin-top: 25px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            font-size: 14px;
+            border-left: 3px solid var(--accent-dim);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy for QuickMath Quest</h1>
-    <p><strong>Effective Date:</strong>1 Julay 2025</p>
-    <p>Welcome to <strong>QuickMath Quest</strong>, developed by <strong>SoftMobiXBD</strong>. Your privacy is important to us, and we are committed to protecting your personal data. This Privacy Policy explains how we handle user information in our app.</p>
 
-    <h2>1. Information We Collect</h2>
-    <p>We do <strong>not</strong> collect or store any personally identifiable information (PII) from users.</p>
-    <p>However, the app may collect the following non-personal information:</p>
-    <ul>
-        <li>Anonymous gameplay data (e.g., scores, level progress)</li>
-        <li>Device information (e.g., model, OS version) for performance analysis</li>
-    </ul>
+    <div class="container">
+        <header>
+            <div class="logo-text">Privacy Policy</div>
+            <div class="logo-sub">QuickMath Quest</div>
+        </header>
 
-    <h2>2. Use of Data</h2>
-    <p>The information collected is used <strong>only</strong> to:</p>
-    <ul>
-        <li>Improve game performance</li>
-        <li>Fix bugs and enhance user experience</li>
-        <li>Track gameplay statistics anonymously</li>
-    </ul>
-    <p>We do <strong>not</strong> use this data for advertising or tracking individual users.</p>
+        <p><em>Last Updated: June 2026</em></p>
+        <p>
+            SoftMobiXBD ("us", "we", or "our") operates the <strong>QuickMath Quest</strong> mobile application. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
+        </p>
 
-    <h2>3. Third-Party Services</h2>
-    <p>QuickMath Quest may use trusted third-party services that may collect non-personal data:</p>
-    <ul>
-        <li><strong>Google Play Services</strong> – For app functionality and analytics</li>
-        <li><strong>Hotpot.ai</strong> – Used for graphic generation (only by developers)</li>
-        <li><strong>Pixabay.com</strong> – For royalty-free sound assets (does not involve user data)</li>
-    </ul>
-    <p>These third-party services have their own privacy policies.</p>
+        <h3>Information Collection and Use</h3>
+        <p>
+            We do not collect any personally identifiable information from our users directly. The application processes game state logic, high scores, and math module progression locally on your device.
+        </p>
 
-    <h2>4. Children’s Privacy</h2>
-    <p>This app is designed for users <strong>aged 13 and above</strong>. We do not knowingly collect personal data from children under 13. If you believe that your child has provided personal data without your consent, please contact us so we can remove the information.</p>
+        <h3>Third-Party Services</h3>
+        <p>
+            The app does utilize third-party services that may collect information used to identify you under their own independent terms. Below are links to the privacy policies of the core third-party service providers utilized by our app:
+        </p>
+        <ul>
+            <li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob</a> (If monetization elements are active)</li>
+        </ul>
 
-    <h2>5. Data Storage & Security</h2>
-    <p>We <strong>do not store</strong> any user data on our servers. All user progress is stored <strong>locally on the device</strong>. If the app is uninstalled, this data may be lost.</p>
+        <h3>Log Data</h3>
+        <p>
+            We want to inform you that whenever you use our Service, in the case of an error or crash in the app, data and information may be collected (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.
+        </p>
 
-    <h2>6. Permissions</h2>
-    <p>QuickMath Quest does <strong>not require</strong> access to your contacts, camera, microphone, or location. The app runs independently without accessing sensitive device features.</p>
+        <h3>Children's Privacy</h3>
+        <p>
+            Our core services are optimized for students aged 13 and older. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us so that we can execute necessary delete operations.
+        </p>
 
-    <h2>7. Ads and Monetization</h2>
-    <p>We may display <strong>non-personalized ads</strong> using AdMob to support free access to the game. These ads are designed to be age-appropriate. No personal data is collected for ad personalization.</p>
+        <h3>Security</h3>
+        <p>
+            We value your trust in providing us with any analytical or configuration data, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable.
+        </p>
 
-    <h2>8. Data Deletion Requests</h2>
-    <p>Since we do not collect or store user data, there is nothing to delete. However, if you have questions or concerns, you may contact us anytime.</p>
+        <h3>Changes to This Policy</h3>
+        <p>
+            We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.
+        </p>
 
-    <h2>9. Updates to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+        <div class="info-box">
+            <strong>Contact Us</strong><br>
+            If you have any questions, security concerns, or feedback regarding this Privacy Policy, feel free to reach out to the development team at:<br>
+            <a href="mailto:softmobixbd@gmail.com">softmobixbd@gmail.com</a>
+        </div>
 
-    <h2>10. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-    <p><strong>Email:</strong> softmobixbd@gmail.com<br>
-    <strong>Developer:</strong> SoftMobiXBD</p>
+        <footer>
+            <p style="text-align: center; font-size: 12px; margin: 0;">
+                &copy; 2026 SoftMobiXBD. All rights reserved.
+            </p>
+        </footer>
+    </div>
+
 </body>
 </html>
