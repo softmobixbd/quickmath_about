@@ -1,72 +1,258 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Us</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | QuickMath Quest</title>
+    <!-- Modern web typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        @media (max-width: 400px) {
-            h3 {
-                font-size: 1.5em;
+        :root {
+            --bg-color: #0d1310;
+            --card-bg: #141f1a;
+            --accent-glow: #00ff88;
+            --accent-dim: #1db974;
+            --text-main: #ffffff;
+            --text-muted: #a4b3ab;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 1px 1px rgba(0, 255, 136, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+            border-bottom: 2px solid rgba(0, 255, 136, 0.1);
+            padding-bottom: 20px;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-main);
+            text-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+        }
+
+        .logo-sub {
+            color: var(--accent-glow);
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 5px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-top: 30px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        h3::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 20px;
+            background: var(--accent-glow);
+            margin-right: 10px;
+            border-radius: 4px;
+            box-shadow: 0 0 8px var(--accent-glow);
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .highlight {
+            color: var(--accent-glow);
+        }
+
+        /* Interactive Grid Layout for Modules */
+        .modules-list {
+            list-style: none;
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        @media (min-width: 480px) {
+            .modules-list {
+                grid-template-columns: 1fr 1fr;
             }
-            p {
-                font-size: 1em;
-                padding: 0 10px;
-            }
+        }
+
+        .modules-list li {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 255, 136, 0.15);
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 14px;
+            color: var(--text-muted);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .modules-list li:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-glow);
+        }
+
+        .modules-list li strong {
+            display: block;
+            color: var(--accent-glow);
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        .credits-box {
+            margin-top: 35px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            font-size: 13px;
+            border-left: 3px solid var(--accent-dim);
+        }
+
+        .credits-box h4 {
+            color: var(--text-main);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .credits-box a {
+            color: var(--accent-glow);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .credits-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 20px;
         }
     </style>
 </head>
-<body style="background-color:#141318; color:#e6e1e9; font-family: Arial, sans-serif; margin: 0; padding: 20px;">
+<body>
 
-    <div style="max-width: 900px; margin: auto;">
-        <h3 style="text-align: start;"><strong>Welcome to QuickMath Quest!</strong></h3>
-        <p style="text-align: start;">
-            At <strong>SoftMobiXBD</strong>, we believe that learning should be both <strong>fun and engaging</strong>. With the increasing use of mobile devices among young users, we wanted to create something <strong>educational and entertaining</strong>—a game that transforms screen time into a productive learning experience.
+    <div class="container">
+        <header>
+            <div class="logo-text">QuickMath Quest</div>
+            <div class="logo-sub">SoftMobiXBD</div>
+        </header>
+
+        <h3>Welcome to the Quest!</h3>
+        <p>
+            At <strong>SoftMobiXBD</strong>, we believe that education should be highly interactive and entertaining. In an era where mobile devices dominate modern screen time, our goal was to engineer a platform that shifts casual play into a productive, cognitive training routine.
         </p>
 
-        <h3 style="text-align: start;"><strong>Why We Created QuickMath Quest</strong></h3>
-        <p style="text-align: start;">
-            Many young people spend hours on mobile devices, often engaging with content that doesn’t contribute to their growth. That’s why we developed <strong>QuickMath Quest</strong>—a fun and interactive way to sharpen math skills while enjoying the challenge of a game. Whether you love numbers or want to improve your math-solving skills, this app provides an enjoyable way to practice <strong>addition, subtraction, multiplication, and division</strong>.
+        <h3>Why QuickMath Quest?</h3>
+        <p>
+            Many digital spaces engage users without stimulating brain growth. <strong>QuickMath Quest</strong> bridges that gap by functioning as a high-octane mental workspace disguised as an exciting puzzle game. Whether you are looking to master basic arithmetic speed or tackle logic grids, the application scales dynamically to refine your speed, accuracy, and working memory.
         </p>
 
-        <h3 style="text-align: start;"><strong>Who Can Play?</strong></h3>
-        <p style="text-align: start;">
-            QuickMath Quest is designed for <strong>students from 13 to 17 years old (Grades 8 to 12)</strong>. However, it’s suitable for <strong>anyone who enjoys math challenges</strong>—even adults looking to test their speed and accuracy!
+        <h3>Who Is It For?</h3>
+        <p>
+            While fine-tuned with progression targets ideal for <strong>students aged 13 to 17 (Grades 8 to 12)</strong>, the game features flexible difficulty architecture. It is an optimized fit for <strong>puzzle enthusiasts of all ages</strong> looking to defend their logical edge and test operational boundaries.
         </p>
 
-        <h3 style="text-align: start;"><strong>What Makes Our App Special?</strong></h3>
-        <p style="text-align: start;">
-            Unlike many other math games, QuickMath Quest offers <strong>fully randomized questions</strong>, ensuring that each play-through is unique. The app includes multiple exciting game modes:
+        <h3>The Complete Puzzle Suite</h3>
+        <p>
+            Unlike static arithmetic drills, QuickMath Quest utilizes completely randomized equation generation across <span class="highlight">8 unique training modules</span> to ensure no two sessions feel the same:
         </p>
-        <ul style="text-align: start;">
-            <li>✅ <strong>Simple Math</strong> – Solve problems at your own pace</li>
-            <li>✅ <strong>Time Challenge</strong> – Answer as many questions as possible in a set time (10–60 seconds)</li>
-            <li>✅ <strong>True or False</strong> – Quickly decide if the math statement is correct</li>
-            <li>✅ <strong>Drag &amp; Match</strong> – Move the correct answer to the question</li>
-            <li>✅ <strong>Draw to Match</strong> – Connect the right answer with a line</li>
+        
+        <ul class="modules-list">
+            <li>
+                <strong>📊 Simple Math</strong>
+                Solve fundamental operations at a comfortable, non-timed training pace.
+            </li>
+            <li>
+                <strong>⏳ Time Challenge</strong>
+                Race against a ticking clock across custom interval rounds ranging from 10 to 60 seconds.
+            </li>
+            <li>
+                <strong>✅ True or False</strong>
+                Execute split-second validation checks on complex statements under pressure.
+            </li>
+            <li>
+                <strong>🎯 Drag & Match</strong>
+                Physically rearrange structural equations to target precise answers.
+            </li>
+            <li>
+                <strong>📈 Draw to Match</strong>
+                Trace paths dynamically across the grid to link compatible values instantly.
+            </li>
+            <li>
+                <strong>🔍 Find X, Y, Z</strong>
+                An advanced algebra block dedicated to isolating hidden variables and cracking algebraic expressions.
+            </li>
+            <li>
+                <strong>🧩 Strategic Sudoku</strong>
+                Train logic and structural placement utilizing adaptive, beginner-friendly Sudoku matrices.
+            </li>
+            <li>
+                <strong>🔢 2028 Challenge</strong>
+                A tactical grid game focused on sliding, stacking, and merging tiles to maximize numerical high scores.
+            </li>
         </ul>
-        <p style="text-align: start;">These diverse game styles make math practice more engaging and dynamic!</p>
 
-         <br />
-    <br />
-    <br />
-    <h2>Cradits</h2>
-    <p>
-      <!-- <strong>Sounds:</strong> <a target="blank" href="https://pixabay.com">pixabay.com<a/> <br/> -->
-    Sound Effect by <a href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=6416">freesound_community</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=6416">Pixabay</a>
-      <strong>Screenshots Maker:</strong>  <a target="blank" href="https://hotpot.ai">hotpot.ai<a/>
-    
-    </p>
+        <div class="credits-box">
+            <h4>Credits & Attribution</h4>
+            <p style="font-size:13px; margin-bottom:0;">
+                Audio soundscapes provided by <a href="https://pixabay.com/users/freesound_community-46691455/" target="_blank">freesound_community</a> via <a href="https://pixabay.com/" target="_blank">Pixabay</a>.<br>
+                Visual layouts and presentation optimized using assets from <a href="https://hotpot.ai" target="_blank">Hotpot.ai</a>.
+            </p>
+        </div>
 
-        <h3 style="text-align: start;"><strong>About SoftMobiXBD</strong></h3>
-        <p style="text-align: start;">
-            <strong>SoftMobiXBD</strong> is a mobile app development company dedicated to creating <strong>interactive and meaningful digital experiences</strong>. Our mission is to design apps that are <strong>useful, enjoyable, and educational</strong>, helping users make the most of their screen time.
-        </p>
-
-        <p style="text-align: start;">
-            Thank you for choosing <strong>QuickMath Quest!</strong> We hope you enjoy playing and learning with us. 🚀
-        </p>
+        <footer>
+            <p style="text-align: center; font-size: 12px; margin: 0;">
+                &copy; 2026 SoftMobiXBD. Built for meaningful digital experiences. All rights reserved.
+            </p>
+        </footer>
     </div>
 
 </body>
