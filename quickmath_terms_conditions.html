@@ -1,79 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Terms & Conditions - QuickMath Quest</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | QuickMath Quest</title>
+    <!-- Modern web typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <style>
+        :root {
+            --bg-color: #0d1310;
+            --card-bg: #141f1a;
+            --accent-glow: #00ff88;
+            --accent-dim: #1db974;
+            --text-main: #ffffff;
+            --text-muted: #a4b3ab;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            padding: 16px;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
             line-height: 1.6;
-            color: #e6e1e9;
-            background-color: #141318;
-            max-width: 800px;
-            margin: auto;
+            padding: 20px;
         }
-        h1, h2 {
-            color: #e6e1e9;
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 1px 1px rgba(0, 255, 136, 0.1);
         }
-        h1 {
-            font-size: 24px;
-            margin-top: 24px;
+
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+            border-bottom: 2px solid rgba(0, 255, 136, 0.1);
+            padding-bottom: 20px;
         }
-        h2 {
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-main);
+            text-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+        }
+
+        .logo-sub {
+            color: var(--accent-glow);
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 5px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h3 {
             font-size: 20px;
-            margin-top: 20px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-top: 30px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
         }
+
+        h3::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 20px;
+            background: var(--accent-glow);
+            margin-right: 10px;
+            border-radius: 4px;
+            box-shadow: 0 0 8px var(--accent-glow);
+        }
+
         p {
-            margin: 12px 0;
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent-glow);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .info-box {
+            margin-top: 25px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            font-size: 14px;
+            border-left: 3px solid var(--accent-dim);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 13px;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Terms & Conditions for QuickMath Quest</h1>
-    <p><strong>Effective Date:</strong> 1 Julay 2025</p>
-    <p>Welcome to <strong>QuickMath Quest</strong>, a mobile educational game developed by <strong>SoftMobiXBD</strong>. By downloading, installing, or using this app, you agree to abide by the following terms and conditions. Please read them carefully before use.</p>
 
-    <h2>1. Acceptance of Terms</h2>
-    <p>By using QuickMath Quest, you agree to these Terms & Conditions. If you do not agree, please do not use the app. These terms may be updated from time to time. Continued use of the app implies acceptance of any changes.</p>
+    <div class="container">
+        <header>
+            <div class="logo-text">Terms & Conditions</div>
+            <div class="logo-sub">QuickMath Quest</div>
+        </header>
 
-    <h2>2. Eligibility</h2>
-    <p>This app is designed for users aged <strong>13 and above</strong>. By using the app, you confirm that you are at least 13 years old or have obtained parental/guardian consent.</p>
+        <p><em>Last Updated: June 2026</em></p>
+        <p>
+            By downloading or using the <strong>QuickMath Quest</strong> mobile application, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app.
+        </p>
 
-    <h2>3. Educational Purpose</h2>
-    <p>QuickMath Quest is intended to provide a fun and educational experience focused on math practice. The app is <strong>not a professional tutoring service</strong>, and results may vary based on the user's effort and practice.</p>
+        <h3>Intellectual Property</h3>
+        <p>
+            You are not allowed to copy or modify the app, any part of the app, or our trademarks in any way. You are not allowed to attempt to extract the source code of the app, and you also shouldn't try to translate the app into other languages or make derivative versions. The app itself, and all the trademarks, copyright, database rights, and other intellectual property rights related to it, still belong to <strong>SoftMobiXBD</strong>.
+        </p>
 
-    <h2>4. Intellectual Property</h2>
-    <p>All content in the app—including code, graphics, sounds (from pixabay.com), and designs—is the property of <strong>SoftMobiXBD</strong> or its content providers. You may not copy, reproduce, or distribute any part of the app without prior written permission.</p>
+        <h3>Changes and App Functionality</h3>
+        <p>
+            SoftMobiXBD is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.
+        </p>
 
-    <h2>5. Usage Restrictions</h2>
-    <p>You agree <strong>not to</strong>:</p>
-    <ul>
-        <li>Modify, reverse engineer, or hack the app</li>
-        <li>Use the app for any illegal or unauthorized purpose</li>
-        <li>Violate any laws in your jurisdiction while using the app</li>
-    </ul>
+        <h3>Data Connections & Network Charges</h3>
+        <p>
+            You should be aware that there are certain things that SoftMobiXBD will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi or provided by your mobile network provider, but SoftMobiXBD cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, or if you have run out of your data allowance.
+        </p>
 
-    <h2>6. In-App Content and Advertisements</h2>
-    <p>The app is free to use and may contain <strong>non-personalized advertisements</strong> through third-party ad providers (e.g., AdMob). We strive to ensure ads are age-appropriate and relevant, but we do not control their exact content.</p>
+        <h3>Limitation of Liability</h3>
+        <p>
+            Along the same lines, SoftMobiXBD cannot always take responsibility for the way you use the app. For example, you need to ensure that your device stays charged – if it runs out of battery and you can't turn it on to access the Service, SoftMobiXBD cannot accept responsibility.
+        </p>
+        <p>
+            With respect to SoftMobiXBD’s liability for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavor to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. SoftMobiXBD accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.
+        </p>
 
-    <h2>7. Disclaimer of Warranty</h2>
-    <p>QuickMath Quest is provided “<strong>as is</strong>” without warranties of any kind, including but not limited to performance, accuracy, or suitability for any particular purpose. You use the app at your own risk.</p>
+        <h3>Termination</h3>
+        <p>
+            We may wish to update the app at any point. The app is currently available on Android – the requirements for the system (and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep playing. We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you.
+        </p>
 
-    <h2>8. Limitation of Liability</h2>
-    <p>SoftMobiXBD will not be held liable for:</p>
-    <ul>
-        <li>Any indirect, incidental, or consequential damages arising from use of the app</li>
-        <li>Any data loss if the app is deleted or uninstalled</li>
-    </ul>
+        <div class="info-box">
+            <strong>Questions Regarding Terms</strong><br>
+            If you have any questions or clarification requests regarding our operational Terms & Conditions, please reach out directly via our official channel:<br>
+            <a href="mailto:softmobixbd@gmail.com">softmobixbd@gmail.com</a>
+        </div>
 
-    <h2>9. Termination</h2>
-    <p>We reserve the right to terminate access to the app at any time without notice if you violate these terms or misuse the app in any way.</p>
+        <footer>
+            <p style="text-align: center; font-size: 12px; margin: 0;">
+                &copy; 2026 SoftMobiXBD. All rights reserved.
+            </p>
+        </footer>
+    </div>
 
-    <h2>10. Contact Us</h2>
-    <p>If you have questions or concerns regarding these Terms & Conditions, please contact us:</p>
-    <p><strong>Email:</strong> softmobixbd@gmail.com<br>
-    <strong>Developer:</strong> SoftMobiXBD</p>
 </body>
 </html>
