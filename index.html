@@ -1,70 +1,450 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Us</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About QuickMath Quest &mdash; 20 free offline math brain games</title>
+<meta name="description" content="QuickMath Quest packs 20 free math brain games - sudoku, 2048, Cross Math, Make 24, Equation Guess, times tables and speed math - into one offline app with daily streaks, achievements and no sign-up.">
+<meta name="theme-color" content="#16171D">
+<meta name="author" content="SoftMobiXBD">
+<link rel="canonical" href="https://softmobixbd.github.io/quickmath_about/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="QuickMath Quest">
+<meta property="og:title" content="About QuickMath Quest &mdash; 20 free offline math brain games">
+<meta property="og:description" content="QuickMath Quest packs 20 free math brain games - sudoku, 2048, Cross Math, Make 24, Equation Guess, times tables and speed math - into one offline app with daily streaks, achievements and no sign-up.">
+<meta property="og:url" content="https://softmobixbd.github.io/quickmath_about/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/webp;base64,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">
+<link rel="apple-touch-icon" href="data:image/webp;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  color-scheme:dark;
+  --bg:#0F0D13;
+  --surface:#16171D;
+  --card:#1C1B20;
+  --card-2:#201F24;
+  --card-3:#2B292F;
+  --line:#2E3033;
+  --glow:rgba(169,229,123,.20);
+  --text:#F5FFEE;
+  --muted:#AEB8A6;
+  --primary:#A9E57B;
+  --primary-2:#81CA49;
+  --deep:#3D6B1A;
+  --danger:#F33D40;
+  --r:18px;
+  --maxw:900px;
+  --ff:'Andika','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif;
+}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--ff);
+  font-size:17px;
+  line-height:1.65;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0 0 auto 0;
+  height:420px;
+  background:
+    radial-gradient(60% 100% at 50% 0%, rgba(169,229,123,.13) 0%, rgba(169,229,123,0) 70%),
+    radial-gradient(40% 80% at 85% 5%, rgba(129,202,73,.10) 0%, rgba(129,202,73,0) 70%);
+  pointer-events:none;
+  z-index:0;
+}
+.wrap{position:relative;z-index:1;width:100%;max-width:var(--maxw);margin:0 auto;padding:0 16px}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--primary);text-decoration:none;border-bottom:1px solid rgba(169,229,123,.35)}
+a:hover{color:#C7F0A4;border-bottom-color:rgba(169,229,123,.8)}
+a:focus-visible{outline:2px solid var(--primary);outline-offset:3px;border-radius:4px}
+strong{color:#fff;font-weight:700}
+h1,h2,h3,h4{line-height:1.25;margin:0;letter-spacing:-.01em}
+p{margin:0 0 16px}
+p:last-child{margin-bottom:0}
 
-    <style>
-        @media (max-width: 400px) {
-            h3 {
-                font-size: 1.5em;
-            }
-            p {
-                font-size: 1em;
-                padding: 0 10px;
-            }
-        }
-    </style>
+/* ---------- hero ---------- */
+.hero{padding:44px 0 34px;text-align:center}
+.hero-icon{
+  width:92px;height:92px;margin:0 auto 20px;border-radius:24px;
+  box-shadow:0 0 0 1px rgba(169,229,123,.28),0 18px 44px -14px rgba(169,229,123,.45);
+}
+.hero h1{
+  font-size:clamp(30px,8.2vw,46px);font-weight:700;margin-bottom:12px;
+  background:linear-gradient(180deg,#F5FFEE 20%,#A9E57B 130%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.lede{color:var(--muted);font-size:clamp(16px,4.2vw,19px);max-width:36ch;margin:0 auto 22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:26px}
+.chip{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--card-2);border:1px solid var(--line);color:var(--muted);
+  border-radius:999px;padding:6px 13px;font-size:13.5px;line-height:1.4;
+}
+.chip b{color:var(--primary);font-weight:700}
+
+/* ---------- buttons ---------- */
+.actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:13px 22px;border-radius:14px;font-size:16px;font-weight:700;
+  border:1px solid transparent;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-primary{
+  background:linear-gradient(180deg,var(--primary),var(--primary-2));
+  color:#123006;box-shadow:0 12px 28px -12px rgba(169,229,123,.75);border-color:rgba(169,229,123,.5);
+}
+.btn-primary:hover{color:#123006;box-shadow:0 16px 34px -12px rgba(169,229,123,.9)}
+.btn-ghost{background:var(--card-2);border-color:var(--line);color:var(--text)}
+.btn-ghost:hover{color:var(--text);border-color:rgba(169,229,123,.45)}
+
+/* ---------- stat strip ---------- */
+.stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:18px 12px;margin:30px 0 8px;
+}
+.stat{text-align:center;padding:2px 4px}
+.stat b{display:block;color:var(--primary);font-size:clamp(20px,5.6vw,26px);font-weight:700;line-height:1.2}
+.stat span{display:block;color:var(--muted);font-size:12.5px;line-height:1.35;margin-top:4px}
+
+/* ---------- sections ---------- */
+section{padding:34px 0;scroll-margin-top:16px}
+.eyebrow{
+  display:inline-block;color:var(--primary);font-size:12.5px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px;
+}
+h2{font-size:clamp(22px,5.6vw,30px);font-weight:700;margin-bottom:12px}
+h2 .dot{color:var(--primary)}
+.sub{color:var(--muted);margin-bottom:24px;font-size:16px}
+
+/* ---------- cards ---------- */
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;
+}
+.grid{display:grid;gap:14px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.mode{
+  position:relative;
+  background:linear-gradient(180deg,var(--card-2),var(--card));
+  border:1px solid var(--line);border-radius:16px;padding:16px;
+  transition:border-color .18s ease,transform .18s ease;
+}
+.mode:hover{border-color:rgba(169,229,123,.45);transform:translateY(-3px)}
+.ico{
+  width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  background:rgba(169,229,123,.12);border:1px solid rgba(169,229,123,.22);color:var(--primary);
+  margin-bottom:12px;
+}
+.ico svg{width:22px;height:22px;display:block}
+.mode h3{font-size:16.5px;font-weight:700;margin-bottom:5px;padding-right:44px}
+.mode .new{
+  position:absolute;top:15px;right:14px;
+  background:linear-gradient(180deg,var(--primary),var(--primary-2));color:#123006;
+  font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  border-radius:999px;padding:3px 9px;line-height:1.5;
+  box-shadow:0 6px 16px -8px rgba(169,229,123,.9);
+}
+.mgroup{margin-bottom:30px}
+.mgroup:last-child{margin-bottom:0}
+.mgroup-h{
+  display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+  font-size:15px;font-weight:700;color:var(--text);margin:0 0 14px;
+  padding-bottom:10px;border-bottom:1px solid var(--line);
+}
+.mgroup-h span{color:var(--muted);font-size:13px;font-weight:400}
+.mode p{color:var(--muted);font-size:14.5px;line-height:1.55;margin:0}
+
+.feat{display:flex;gap:13px;align-items:flex-start;padding:15px 16px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+.feat .ico{width:34px;height:34px;border-radius:10px;margin:0;flex:none}
+.feat .ico svg{width:18px;height:18px}
+.feat h3{font-size:15.5px;margin-bottom:3px}
+.feat p{color:var(--muted);font-size:14px;line-height:1.5;margin:0}
+
+/* ---------- callout ---------- */
+.callout{
+  background:linear-gradient(180deg,rgba(169,229,123,.09),rgba(169,229,123,.03));
+  border:1px solid rgba(169,229,123,.28);border-left:4px solid var(--primary);
+  border-radius:14px;padding:16px 18px;color:var(--text);font-size:15.5px;
+}
+.callout b{color:var(--primary)}
+
+/* ---------- lists ---------- */
+ul.ticks{list-style:none;padding:0;margin:0 0 16px}
+ul.ticks li{position:relative;padding:0 0 0 30px;margin-bottom:11px;color:var(--muted);font-size:15.5px;line-height:1.6}
+ul.ticks li::before{
+  content:"";position:absolute;left:0;top:.42em;width:17px;height:17px;border-radius:50%;
+  background:rgba(169,229,123,.15);border:1px solid rgba(169,229,123,.45);
+}
+ul.ticks li::after{
+  content:"";position:absolute;left:5px;top:.72em;width:7px;height:4px;
+  border-left:2px solid var(--primary);border-bottom:2px solid var(--primary);
+  transform:rotate(-45deg);
+}
+ul.ticks li strong{color:var(--text)}
+ul.bullets{padding-left:20px;margin:0 0 16px;color:var(--muted)}
+ul.bullets li{margin-bottom:10px;font-size:15.5px;line-height:1.6}
+ul.bullets li::marker{color:var(--primary)}
+ul.bullets strong{color:var(--text)}
+
+/* ---------- FAQ ---------- */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+details[open]{border-color:rgba(169,229,123,.35)}
+summary{
+  cursor:pointer;list-style:none;padding:15px 46px 15px 17px;position:relative;
+  font-weight:700;font-size:15.5px;color:var(--text);
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:"";position:absolute;right:19px;top:50%;width:8px;height:8px;
+  border-right:2px solid var(--primary);border-bottom:2px solid var(--primary);
+  transform:translateY(-70%) rotate(45deg);transition:transform .2s ease;
+}
+details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+details .body{padding:0 17px 16px;color:var(--muted);font-size:15px;line-height:1.6}
+
+/* ---------- legal pages ---------- */
+.page-head{padding:38px 0 8px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.page-head .badge{
+  display:inline-flex;align-items:center;gap:7px;background:rgba(169,229,123,.12);
+  border:1px solid rgba(169,229,123,.3);color:var(--primary);border-radius:999px;
+  padding:5px 13px;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px;
+}
+.page-head h1{font-size:clamp(26px,7vw,38px);font-weight:700;margin-bottom:12px}
+.dates{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.dates span{background:var(--card-2);border:1px solid var(--line);border-radius:10px;padding:6px 12px;font-size:13px;color:var(--muted)}
+.dates b{color:var(--text);font-weight:700}
+.toc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;margin:8px 0 10px}
+.toc h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-weight:700}
+.toc ol{margin:0;padding-left:20px;columns:2;column-gap:22px}
+.toc li{margin-bottom:7px;font-size:14.5px;break-inside:avoid}
+.toc li::marker{color:var(--primary);font-size:13px}
+.toc a{border-bottom:none;color:var(--muted)}
+.toc a:hover{color:var(--primary)}
+.legal{padding:26px 0 10px}
+.legal h2{
+  display:flex;gap:12px;align-items:flex-start;font-size:clamp(19px,4.8vw,23px);
+  margin:34px 0 14px;scroll-margin-top:16px;
+}
+.legal h2 .n{
+  flex:none;min-width:30px;height:30px;border-radius:9px;display:inline-flex;
+  align-items:center;justify-content:center;background:rgba(169,229,123,.13);
+  border:1px solid rgba(169,229,123,.3);color:var(--primary);font-size:14px;margin-top:3px;
+}
+.legal h3{font-size:16.5px;margin:20px 0 8px;color:var(--primary)}
+.legal p,.legal li{color:var(--muted)}
+.legal p strong,.legal li strong{color:var(--text)}
+.legal > .card,.legal > .callout,.legal > .glance{margin-bottom:8px}
+.glance{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0 4px}
+.glance > div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+.glance .g-t{min-width:0}
+.glance .ico{margin:0 auto 9px}
+.glance b{display:block;font-size:14.5px;margin-bottom:3px}
+.glance span{color:var(--muted);font-size:13px;line-height:1.45;display:block}
+
+/* ---------- contact ---------- */
+.contact{
+  background:linear-gradient(180deg,var(--card-2),var(--card));
+  border:1px solid rgba(169,229,123,.25);border-radius:var(--r);padding:24px 20px;text-align:center;
+}
+.contact h2{margin-bottom:8px}
+.contact p{color:var(--muted);margin-bottom:18px}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line);margin-top:34px;padding:26px 0 40px;text-align:center}
+.fnav{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;margin-bottom:18px}
+.fnav a{color:var(--muted);font-size:15px;border-bottom:none}
+.fnav a:hover,.fnav a[aria-current="page"]{color:var(--primary)}
+.fmeta{color:#7E8878;font-size:13.5px;line-height:1.7}
+.fmeta a{color:#7E8878;border-bottom-color:rgba(126,136,120,.5)}
+.fmeta a:hover{color:var(--primary)}
+
+/* ---------- responsive ---------- */
+@media (max-width:720px){
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .glance{grid-template-columns:1fr;gap:10px}
+  .glance > div{display:flex;align-items:center;gap:13px;text-align:left;padding:13px 15px}
+  .glance .ico{margin:0;flex:none}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .grid-2,.grid-3{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr);gap:14px 10px;padding:16px 10px}
+  .toc ol{columns:1}
+  .actions .btn{width:100%}
+  section{padding:28px 0}
+  .hero{padding:32px 0 26px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.mode:hover{transform:none}
+}
+</style>
 </head>
-<body style="background-color: #141318; color: #e6e1e9; font-family: Arial, sans-serif; margin: 0; padding: 20px;">
+<body>
+<main class="wrap">
 
-    <div style="max-width: 900px; margin: auto;">
-        <h3 style="text-align: start;"><strong>Welcome to QuickMath Quest!</strong></h3>
-        <p style="text-align: start;">
-            At <strong>SoftMobiXBD</strong>, we believe that learning should be both <strong>fun and engaging</strong>. With the increasing use of mobile devices, we wanted to create something <strong>educational and entertaining</strong>—a game that transforms screen time into a productive learning experience.
-        </p>
+<header class="hero">
+  <img class="hero-icon" src="data:image/webp;base64,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" width="92" height="92" alt="QuickMath Quest app icon">
+  <h1>QuickMath Quest</h1>
+  <p class="lede">Twenty math brain games in one free app &mdash; and every one of them works offline.</p>
+  <div class="chips">
+    <span class="chip"><b>20</b> game modes</span>
+    <span class="chip">100% offline</span>
+    <span class="chip">No sign-up</span>
+    <span class="chip">Ages 6+</span>
+  </div>
+  <div class="actions">
+    <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.softmobixbd.math_game"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.4 3.2l14.4 8.8-14.4 8.8z"/></svg> Get it on Google Play</a>
+    <a class="btn btn-ghost" href="#modes">See all 20 games</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>20</b><span>Game modes</span></div>
+    <div class="stat"><b>100%</b><span>Offline play</span></div>
+    <div class="stat"><b>0</b><span>Sign-ups needed</span></div>
+    <div class="stat"><b>&infin;</b><span>Random questions</span></div>
+  </div>
+</header>
 
-        <h3 style="text-align: start;"><strong>Why We Created QuickMath Quest</strong></h3>
-        <p style="text-align: start;">
-            Many people spend hours on mobile devices, often engaging with content that doesn’t contribute to their growth. That’s why we developed <strong>QuickMath Quest</strong>—a fun and interactive way to sharpen math skills while enjoying the challenge of a game. Whether you love numbers or want to improve your math-solving skills, this app provides an enjoyable way to practice <strong>addition, subtraction, multiplication, and division</strong>.
-        </p>
+<section id="why">
+  <span class="eyebrow">Why we built it</span>
+  <h2>Turning screen time into brain time<span class="dot">.</span></h2>
+  <p class="sub">At <strong>SoftMobiXBD</strong> we think learning should be genuinely fun &mdash; not homework with a play button on it.</p>
+  <p>Most of us lose hours a day to a screen, and very little of it leaves us sharper than we started. QuickMath Quest is our answer to that: a game you actually want to open, that happens to make you faster and more confident with numbers.</p>
+  <p>So we built the app we wanted to hand our own families. No account wall before the first puzzle. No progress held hostage by a server. No difficulty spike that makes a ten-year-old give up in level three. Just clean, fast, endlessly varied maths &mdash; from a two-second addition check all the way to multi-step algebra.</p>
+  <div class="callout">Play a single round a day and you build a streak. Keep the streak and you build a habit. That is the whole idea &mdash; <b>small daily reps beat one long cram session</b>.</div>
+</section>
 
-        <h3 style="text-align: start;"><strong>Who Can Play?</strong></h3>
-        <p style="text-align: start;">
-            QuickMath Quest is perfect for <strong>students, kids, and adults</strong> who want a fun daily brain workout. Levels start easy and ramp up gently, so it works whether you're a student practicing for exams or an adult keeping your mind sharp.
-        </p>
+<section id="modes">
+  <span class="eyebrow">What&rsquo;s inside</span>
+  <h2>20 games in one app<span class="dot">.</span></h2>
+  <p class="sub">Arithmetic drills, algebra, logic puzzles and tile-merge games, grouped exactly the way they are on the app&rsquo;s home screen &mdash; pick whatever matches your mood today. <strong>Eight modes are brand new.</strong></p>
+  <div class="card" style="margin-bottom:26px;display:flex;gap:15px;align-items:flex-start">
+    <div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="4.4" width="18.4" height="16.8" rx="2.6"/><path d="M7.8 2.4v4M16.2 2.4v4M2.8 9.6h18.4"/><path d="M8.6 14.8l2.4 2.4 4.6-4.6"/></svg></div><div><h3 style="font-size:17px;margin-bottom:5px">Daily Challenge <span class="new" style="position:static;display:inline-block;vertical-align:2px;margin-left:6px">New</span></h3><p style="color:var(--muted);font-size:15px;margin:0">Ten mixed questions &mdash; sums, missing signs, compare and true-or-false. Everyone gets the same set each day, and you get one try. Compare your score with friends.</p></div>
+  </div>
+  <div class="mgroup"><h3 class="mgroup-h">Quick Math <span>8 modes</span></h3><div class="grid grid-3"><div class="mode"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 7h5M7 4.5v5"/><path d="M14.5 7h5"/><path d="M5 15l4 4M9 15l-4 4"/><path d="M14.5 17h5"/><circle cx="17" cy="14.4" r=".9" fill="currentColor" stroke="none"/><circle cx="17" cy="19.6" r=".9" fill="currentColor" stroke="none"/></svg></div><h3>Simple Math</h3><p>Addition, subtraction, multiplication and division at your own pace &mdash; the perfect warm-up.</p></div>
+      <div class="mode"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M9.5 2h5M12 13.5V9.5M18.4 7.1l1.6-1.6"/></svg></div><h3>Timer</h3><p>Beat the clock and solve as many equations as you can before it runs out.</p></div>
+      <div class="mode"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3h11M6.5 21h11"/><path d="M7 3c0 4.5 5 5.4 5 9s-5 4.5-5 9"/><path d="M17 3c0 4.5-5 5.4-5 9s5 4.5 5 9"/></svg></div><h3>Time Limit</h3><p>Every second counts &mdash; score as high as you can before time expires.</p></div>
+      <div class="mode"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12.5l3 3 6-6"/><path d="M15 9l6 6M21 9l-6 6"/></svg></div><h3>True or False</h3><p>Split-second math fact checks that sharpen your number sense.</p></div>
+      <div class="mode"><span class="new">New</span><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.6 12h3.2M18.2 12h3.2"/><rect x="7.4" y="7.4" width="9.2" height="9.2" rx="2.4" stroke-dasharray="2.8 2.4"/><path d="M12 9.6v4.8M9.6 12h4.8"/></svg></div><h3>Missing Sign</h3><p>An equation is missing one sign. Tap the one that makes it true &mdash; only ever one does.</p></div>
+      <div class="mode"><span class="new">New</span><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.4 7.2L4.2 12l5.2 4.8"/><path d="M14.6 7.2L19.8 12l-5.2 4.8"/></svg></div><h3>Compare</h3><p>Work out both sides, then tap &lt;, = or &gt;. The two sides are often closer than they look.</p></div>
+      <div class="mode"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 19V8a3 3 0 0 1 3-3"/><path d="M5.5 11h6"/><path d="M14.5 12l5.5 7M20 12l-5.5 7"/></svg></div><h3>Algebraic Math</h3><p>Multi-step equations that build real fluency instead of guesswork.</p></div>
+      <div class="mode"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l4.5 7M7.5 8.5L3 15.5"/><path d="M10 8.5l2.5 3.5 2.5-3.5M12.5 12v3.5"/><path d="M17.5 8.5H22l-4.5 7H22"/></svg></div><h3>Find X, Y, Z</h3><p>Solve for the unknown and master variables one equation at a time.</p></div></div></div>
+<div class="mgroup"><h3 class="mgroup-h">Brain Puzzles <span>5 modes</span></h3><div class="grid grid-3"><div class="mode"><span class="new">New</span><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.2" y="8.4" width="5.6" height="7.2" rx="1.6" fill="currentColor"/><rect x="9.2" y="8.4" width="5.6" height="7.2" rx="1.6"/><rect x="16.2" y="8.4" width="5.6" height="7.2" rx="1.6"/></svg></div><h3>Equation Guess</h3><p>Crack the hidden equation in six guesses. Each try tells you which symbols are right and where.</p></div>
+      <div class="mode"><span class="new">New</span><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.4" y="2.4" width="5.6" height="5.6" rx="1.5"/><rect x="9.2" y="2.4" width="5.6" height="5.6" rx="1.5"/><rect x="16" y="2.4" width="5.6" height="5.6" rx="1.5"/><rect x="2.4" y="9.2" width="5.6" height="5.6" rx="1.5"/><rect x="2.4" y="16" width="5.6" height="5.6" rx="1.5"/></svg></div><h3>Cross Math</h3><p>Fill a crossword-style grid of numbers and operators so every row and column adds up.</p></div>
+      <div class="mode"><span class="new">New</span><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none"/></svg></div><h3>Make 24</h3><p>Use all four numbers with + &minus; &times; &divide; to land on exactly 24.</p></div>
+      <div class="mode"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="2.8" width="18.4" height="18.4" rx="2.4"/><path d="M9 2.8v18.4M15 2.8v18.4M2.8 9h18.4M2.8 15h18.4"/></svg></div><h3>Sudoku</h3><p>Classic logic puzzles from gentle beginner grids up to hard.</p></div>
+      <div class="mode"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.6" cy="12" r="5.4"/><circle cx="15.4" cy="12" r="5.4"/></svg></div><h3>Match 10</h3><p>Pair numbers that are equal or add up to ten and clear the whole board.</p></div></div></div>
+<div class="mgroup"><h3 class="mgroup-h">Touch &amp; Merge <span>4 modes</span></h3><div class="grid grid-3"><div class="mode"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="3" width="8.5" height="8.5" rx="2.2"/><rect x="13" y="3" width="8.5" height="8.5" rx="2.2" stroke-dasharray="2.6 2.4"/><path d="M13.5 17h7M17.5 14l3 3-3 3"/></svg></div><h3>Drag &amp; Match</h3><p>Drag each equation onto the answer it belongs to.</p></div>
+      <div class="mode"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="5.8" r="2.3"/><circle cx="19" cy="5.8" r="2.3"/><circle cx="5" cy="18.2" r="2.3"/><circle cx="19" cy="18.2" r="2.3"/><path d="M6.8 7.4l10.4 9.4"/></svg></div><h3>Draw to Match</h3><p>Connect matching values across the grid with a single line.</p></div>
+      <div class="mode"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="2.8" width="8" height="8" rx="2.2"/><rect x="13.2" y="2.8" width="8" height="8" rx="2.2"/><rect x="2.8" y="13.2" width="18.4" height="8" rx="2.2"/></svg></div><h3>2048</h3><p>Slide and merge number tiles in the puzzle that never gets old.</p></div>
+      <div class="mode"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="4.6" cy="12" r="2.6"/><circle cx="12" cy="12" r="2.6"/><circle cx="19.4" cy="12" r="2.6"/><path d="M7.2 12h2.2M14.6 12h2.2"/></svg></div><h3>2248</h3><p>Chain matching tiles together and merge them into bigger numbers.</p></div></div></div>
+<div class="mgroup"><h3 class="mgroup-h">Learn &amp; Play <span>2 modes</span></h3><div class="grid grid-3"><div class="mode"><span class="new">New</span><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="2.8" width="18.4" height="18.4" rx="2.4"/><path d="M2.8 9h18.4M9 2.8v18.4"/><path d="M4.8 5l2.4 2.4M7.2 5L4.8 7.4"/></svg></div><h3>Times Tables</h3><p>Every fact from &times;1 to &times;12. Facts you miss come back until you get them right.</p></div>
+      <div class="mode"><span class="new">New</span><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6.6" cy="8" r="2.6"/><circle cx="17.4" cy="8" r="2.6"/><path d="M2.4 18.6a4.3 4.3 0 0 1 8.4 0M13.2 18.6a4.3 4.3 0 0 1 8.4 0"/><path d="M12 2.6v18.8" stroke-dasharray="2.6 2.6"/></svg></div><h3>Math Duel</h3><p>Two players, one phone. Same question, face to face &mdash; the first correct answer takes the point.</p></div></div></div>
+</section>
 
-        <h3 style="text-align: start;"><strong>What Makes Our App Special?</strong></h3>
-        <p style="text-align: start;">
-            Unlike many other math games, QuickMath Quest offers <strong>fully randomized questions</strong>, ensuring that each play-through is unique. The app now includes <strong>12 game modes</strong>:
-        </p>
-        <ul style="text-align: start;">
-            <li>✅ <strong>Simple Math</strong> – Solve problems at your own pace</li>
-            <li>✅ <strong>Algebraic Math</strong> – Multi-step equations that build real fluency</li>
-            <li>✅ <strong>Find X, Y, Z</strong> – Solve algebra equations and master variables</li>
-            <li>✅ <strong>Time Challenge</strong> – Answer as many questions as possible in a set time</li>
-            <li>✅ <strong>Time Limit</strong> – Score as high as you can before time runs out</li>
-            <li>✅ <strong>True or False</strong> – Quickly decide if the math statement is correct</li>
-            <li>✅ <strong>Drag &amp; Match</strong> – Move the correct answer to the question</li>
-            <li>✅ <strong>Draw to Match</strong> – Connect the right answer with a line</li>
-            <li>✅ <strong>Sudoku</strong> – Classic logic puzzles from beginner to hard</li>
-            <li>✅ <strong>2048</strong> – Slide and merge number tiles in this addictive puzzle</li>
-            <li>✅ <strong>2248</strong> – Connect matching number tiles in a chain and merge them into bigger numbers</li>
-            <li>✅ <strong>Match 10</strong> – Pair numbers that are equal or add up to 10 and clear the board</li>
-        </ul>
-        <p style="text-align: start;">These diverse game styles make math practice more engaging and dynamic! Play once a day to build your streak, unlock achievement badges, and watch your accuracy climb — all your progress is saved right on your device.</p>
+<section id="features">
+  <span class="eyebrow">What makes it different</span>
+  <h2>Built to keep you coming back<span class="dot">.</span></h2>
+  <p class="sub">Practice only works if you actually return to it. Every feature below exists to make that easier.</p>
+  <div class="grid grid-2">
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3l18 18"/><path d="M5 12.6a11 11 0 0 1 3.6-2.3M15.6 10.5a11 11 0 0 1 3.4 2.1"/><path d="M1.8 8.6A16 16 0 0 1 7 5.5M17 5.4a16 16 0 0 1 5.2 3.2"/><path d="M8.6 16.2a6 6 0 0 1 6.8 0"/><circle cx="12" cy="20" r=".9" fill="currentColor" stroke="none"/></svg></div><div><h3>100% offline</h3><p>No internet needed. Play on a plane, on the bus, or anywhere the signal drops.</p></div></div>
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5s5.2 4.4 5.2 9.3a5.2 5.2 0 0 1-10.4 0c0-1.7.8-3.2 2-4.2.4 2 1.4 2.6 2 2 .8-.8-1.2-3.1.8-7.1z"/><path d="M9.6 21.5h4.8"/></svg></div><div><h3>Daily streaks</h3><p>Play once a day to grow your streak and turn practice into a habit.</p></div></div>
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5h10v5.2a5 5 0 0 1-10 0z"/><path d="M7 5.5H4a3 3 0 0 0 3 3M17 5.5h3a3 3 0 0 1-3 3"/><path d="M12 13.7v4M8 20.5h8"/></svg></div><div><h3>Achievement badges</h3><p>Unlock badges as you hit new milestones across every game mode.</p></div></div>
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5h17"/><path d="M6.5 20.5v-6M11.5 20.5V6.5M16.5 20.5v-9"/></svg></div><div><h3>Progress &amp; stats</h3><p>Watch your accuracy, speed and best scores climb session after session.</p></div></div>
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.3S3.5 15.4 3.5 9.4A4.4 4.4 0 0 1 12 7.6a4.4 4.4 0 0 1 8.5 1.8c0 6-8.5 10.9-8.5 10.9z"/></svg></div><div><h3>Extra lives</h3><p>One wrong answer never wipes a whole run &mdash; recover and keep going.</p></div></div>
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8a6 6 0 0 0-3.6 10.8c.4.3.6.8.6 1.3v.6h6v-.6c0-.5.2-1 .6-1.3A6 6 0 0 0 12 2.8z"/><path d="M9.5 18.3h5M10.7 21.2h2.6"/></svg></div><div><h3>Hints, undo &amp; auto-save</h3><p>Stuck on a puzzle? Take a hint, undo a move, and pick up right where you left off.</p></div></div>
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l2.2 5.7 5.8 2.1-5.8 2.1L12 18.4l-2.2-5.7L4 10.6l5.8-2.1z"/><path d="M19 17.4l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></div><div><h3>Endless randomized questions</h3><p>Every question is generated fresh, so no two play-throughs are ever the same.</p></div></div>
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.9l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.7l6.5-.9z"/></svg></div><div><h3>Fair difficulty curve</h3><p>Levels start genuinely easy and ramp up gently &mdash; you never hit a wall.</p></div></div>
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.6" width="12" height="18.8" rx="2.8"/><path d="M10.6 18.4h2.8"/></svg></div><div><h3>Built for phones &amp; tablets</h3><p>A neon dark theme that is easy on the eyes, on any screen size.</p></div></div>
+  </div>
+</section>
 
-        <h3 style="text-align: start;"><strong>About SoftMobiXBD</strong></h3>
-        <p style="text-align: start;">
-            <strong>SoftMobiXBD</strong> is a mobile app development company dedicated to creating <strong>interactive and meaningful digital experiences</strong>. Our mission is to design apps that are <strong>useful, enjoyable, and educational</strong>, helping users make the most of their screen time.
-        </p>
+<section id="who">
+  <span class="eyebrow">Who it&rsquo;s for</span>
+  <h2>From first sums to daily drills<span class="dot">.</span></h2>
+  <p class="sub">The difficulty range is wide on purpose, so the same app can grow with a player for years.</p>
+  <div class="grid grid-2">
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.4"/><path d="M2.8 20.2a6.2 6.2 0 0 1 12.4 0"/><path d="M16.2 5.1a3.4 3.4 0 0 1 0 6.6M17.4 14.6a6.2 6.2 0 0 1 3.8 5.6"/></svg></div><div><h3>Students</h3><p>Drill the arithmetic and algebra that shows up in exams, in short sessions that actually stick.</p></div></div>
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l2.2 5.7 5.8 2.1-5.8 2.1L12 18.4l-2.2-5.7L4 10.6l5.8-2.1z"/><path d="M19 17.4l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></div><div><h3>Kids</h3><p>Bright, friendly puzzles with no accounts, no chat and no complicated setup.</p></div></div>
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5h17"/><path d="M6.5 20.5v-6M11.5 20.5V6.5M16.5 20.5v-9"/></svg></div><div><h3>Adults</h3><p>A daily brain workout that replaces mindless scrolling with something you get better at.</p></div></div>
+    <div class="feat"><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M2.9 12h18.2"/><path d="M12 2.8a14 14 0 0 1 0 18.4 14 14 0 0 1 0-18.4z"/></svg></div><div><h3>Parents &amp; teachers</h3><p>A safe, offline practice tool you can hand over without worrying about sign-ups.</p></div></div>
+  </div>
+</section>
 
-        <p style="text-align: start;">
-            Thank you for choosing <strong>QuickMath Quest!</strong> We hope you enjoy playing and learning with us. 🚀
-        </p>
+<section id="privacy">
+  <span class="eyebrow">Privacy first</span>
+  <h2>We don&rsquo;t want your data<span class="dot">.</span></h2>
+  <p class="sub">A maths game has no business knowing who you are, so ours doesn&rsquo;t ask.</p>
+  <div class="glance">
+    <div><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M5.5 5.5l13 13"/></svg></div><div class="g-t"><b>No accounts</b><span>No name, no email, no sign-up &mdash; ever.</span></div></div>
+    <div><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.6" width="12" height="18.8" rx="2.8"/><path d="M10.6 18.4h2.8"/></svg></div><div class="g-t"><b>Saved on your device</b><span>Progress and stats never leave your phone.</span></div></div>
+    <div><div class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8l8 2.9v6.1c0 5-3.6 8.3-8 9.4-4.4-1.1-8-4.4-8-9.4V5.7z"/><path d="M9 12l2.2 2.2L15.2 10"/></svg></div><div class="g-t"><b>COPPA &amp; GDPR-K aligned</b><span>Built to be safe for younger players.</span></div></div>
+  </div>
+  <p style="margin-top:22px">We use Firebase Analytics and Crashlytics to see which modes are popular and to fix crashes, and Google AdMob to show family-friendly ads &mdash; all of it non-personal and covered in detail in our <a href="https://softmobixbd.github.io/quickmath_about/quickmath_privacy_policy">Privacy Policy</a>.</p>
+</section>
+
+<section id="faq">
+  <span class="eyebrow">Questions</span>
+  <h2>Frequently asked<span class="dot">.</span></h2>
+  <div style="margin-top:22px">
+    <details><summary>Is QuickMath Quest free?</summary><div class="body">Yes. All 20 game modes are free to play, with no subscription and no in-app purchases. The app is supported by ads.</div></details>
+    <details><summary>Do I need an internet connection?</summary><div class="body">No. Every game mode works fully offline. A connection is only used to load ads and to check for app updates &mdash; the maths never needs one.</div></details>
+    <details><summary>Are there ads?</summary><div class="body">Yes, the app is ad-supported through Google AdMob, and ads are configured to stay family-friendly. Some modes also offer an optional rewarded ad if you want an extra life to continue a run &mdash; watching one is always your choice.</div></details>
+    <details><summary>Is it safe for children?</summary><div class="body">Yes. There are no accounts, no sign-ups and no chat, and we never collect names, emails or any other personal details. See our <a href="https://softmobixbd.github.io/quickmath_about/quickmath_privacy_policy">Privacy Policy</a> for the full picture.</div></details>
+    <details><summary>Where is my progress saved?</summary><div class="body">Your streak, stats, achievements and level progress are stored locally on your device only. They are never uploaded to a server, which also means they do not transfer if you switch phones or uninstall the app.</div></details>
+    <details><summary>What ages is it for?</summary><div class="body">Roughly six and up. Early levels only need basic addition and subtraction, while the algebra, sudoku and timed modes stay challenging for adults.</div></details>
+    <details><summary>What languages does the app support?</summary><div class="body">QuickMath Quest is available in English, Bengali, Hindi, Indonesian, Portuguese and Spanish, and follows your device language automatically.</div></details>
+    <details><summary>How do I report a bug or suggest a game mode?</summary><div class="body">Email us at <a href="mailto:softmobixbd@gmail.com">softmobixbd@gmail.com</a>. Player suggestions are where most of our new modes come from &mdash; 2248 and Match 10 both started that way.</div></details>
+  </div>
+</section>
+
+<section id="company">
+  <span class="eyebrow">The team</span>
+  <h2>About SoftMobiXBD<span class="dot">.</span></h2>
+  <p><strong>SoftMobiXBD</strong> is a small mobile app studio building interactive, useful and genuinely enjoyable digital experiences. Our focus is simple: apps that respect your time, your attention and your privacy &mdash; and that leave you with something to show for the minutes you spent in them.</p>
+  <p>QuickMath Quest is our take on that idea for maths. It is actively maintained, and every release so far has been shaped by player feedback &mdash; including the eight new modes added in the September 2026 update.</p>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <h2>Say hello<span class="dot">.</span></h2>
+    <p>Bug reports, feature ideas, or just want to tell us your streak? We read every message.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="mailto:softmobixbd@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.6" y="4.6" width="18.8" height="14.8" rx="2.6"/><path d="M3.4 7.2l7.5 5.3a2 2 0 0 0 2.2 0l7.5-5.3"/></svg> softmobixbd@gmail.com</a>
+      <a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=com.softmobixbd.math_game"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.9l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.7l6.5-.9z"/></svg> Rate on Google Play</a>
     </div>
-
+  </div>
+  <p style="text-align:center;color:var(--muted);margin-top:24px">Thank you for choosing <strong>QuickMath Quest</strong>. Happy calculating. &#128640;</p>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <nav class="fnav">
+      <a href="https://softmobixbd.github.io/quickmath_about/" aria-current="page">About</a>
+      <a href="https://softmobixbd.github.io/quickmath_about/quickmath_privacy_policy">Privacy Policy</a>
+      <a href="https://softmobixbd.github.io/quickmath_about/quickmath_terms_conditions">Terms &amp; Conditions</a>
+      <a href="https://play.google.com/store/apps/details?id=com.softmobixbd.math_game">Google Play</a>
+      <a href="mailto:softmobixbd@gmail.com">Contact</a>
+    </nav>
+    <p class="fmeta">
+      QuickMath Quest v2.1.0 &middot; Made by <strong>SoftMobiXBD</strong><br>
+      &copy; 2026 SoftMobiXBD. All rights reserved. &middot;
+      <a href="mailto:softmobixbd@gmail.com">softmobixbd@gmail.com</a>
+    </p>
+  </div>
+</footer>
 </body>
 </html>
